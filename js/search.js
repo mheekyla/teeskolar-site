@@ -1,5 +1,3 @@
-// search.js - site search on every page. It runs in the browser only (no server needed).
-// It looks through the list below. If you add a page or product, add a line to INDEX.
 (function () {
   var INDEX = [
     { title: "Home", url: "index.html", type: "Page", text: "home TEESKOLAR t-shirt shop wearing a brighter future" },
@@ -13,7 +11,6 @@
     { title: "Terms and Conditions", url: "terms.html", type: "Page", text: "terms conditions service orders payment gcash bank transfer cod shipping delivery returns exchange refund prices liability" }
   ];
 
-  // Every word typed must appear in an item. Title matches rank first.
   function search(query) {
     var words = query.toLowerCase().split(/\s+/).filter(Boolean);
     if (!words.length) { return []; }
