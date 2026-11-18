@@ -1,14 +1,8 @@
-// mailto.js - JavaScript Method 2 (Module 5.2):
-// read the form fields, build a mailto: link with a subject and neat message, and open it.
-
-// 1. Store the email address in one place
 const TO_ADDRESS = "hello@examplewebsite142.com";
 
-// 2. Find the form and the message area
 const form = document.querySelector("#contact-form");
 const message = document.querySelector("#form-message");
 
-// 3. Read each field and build the mailto link
 function buildMailto() {
   const name = document.querySelector("#full-name").value.trim();
   const email = document.querySelector("#email").value.trim();
@@ -28,7 +22,6 @@ function buildMailto() {
   );
 }
 
-// 4. Run when the Send button is pressed
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
